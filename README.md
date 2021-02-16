@@ -11,7 +11,7 @@ npm install
 
 ## Running
 
-1. Enable a mongodb server instance at localhost:27017 or set a different path at `db.js` file.
+1. Enable a mongodb server instance at localhost:27017 or set a different path at `config.js` file.
 
 2. Turn on the Server API
 
