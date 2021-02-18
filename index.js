@@ -10,6 +10,7 @@ require('./db')
 // Rutas
 const bookRoutes = require('./components/book/routes')
 const clientRoutes = require('./components/client/routes')
+const ventasRoutes = require('./components/ventas/routes')
 
 // Middleware para permitir recibir solicitudes HTTP desde cualquier dominio
 app.use(cors())
@@ -20,6 +21,7 @@ app.use(bodyParser.json())
 // Instalación de rutas en el router principal
 app.use('/books', bookRoutes)
 app.use('/clients', clientRoutes)
+app.use('/ventas', ventasRoutes)
 
 app.use('/covers', express.static('covers'))
 
